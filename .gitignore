@@ -1,3 +1,7 @@
 node_modules
 
 *.env
+
+# Replit stuff
+.replit
+.breakpoints
