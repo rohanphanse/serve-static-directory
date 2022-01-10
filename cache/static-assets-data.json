@@ -1,0 +1,233 @@
+{
+  "tree": {
+    "root": {
+      "name": "root",
+      "path": "/",
+      "type": "directory",
+      "children": [
+        {
+          "name": "about.html",
+          "path": "/about.html",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "css",
+          "path": "/css",
+          "type": "directory",
+          "children": [
+            {
+              "name": "main.css",
+              "path": "/css/main.css",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "more-css",
+              "path": "/css/more-css",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "extra.css",
+                  "path": "/css/more-css/extra.css",
+                  "type": "file",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "images",
+          "path": "/images",
+          "type": "directory",
+          "children": [
+            {
+              "name": "bitcoin.jpg",
+              "path": "/images/bitcoin.jpg",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "logo.png",
+              "path": "/images/logo.png",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "index.html",
+          "path": "/index.html",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "js",
+          "path": "/js",
+          "type": "directory",
+          "children": [
+            {
+              "name": "data.js",
+              "path": "/js/data.js",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "main.js",
+              "path": "/js/main.js",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "more.js",
+              "path": "/js/more.js",
+              "type": "file",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "paths": [
+    "/",
+    "/about.html",
+    "/css",
+    "/css/main.css",
+    "/css/more-css",
+    "/css/more-css/extra.css",
+    "/images",
+    "/images/bitcoin.jpg",
+    "/images/logo.png",
+    "/index.html",
+    "/js",
+    "/js/data.js",
+    "/js/main.js",
+    "/js/more.js"
+  ],
+  "dict": {
+    "/about.html": {
+      "name": "about.html",
+      "path": "/about.html",
+      "type": "file",
+      "children": []
+    },
+    "/css": {
+      "name": "css",
+      "path": "/css",
+      "type": "directory",
+      "children": [
+        {
+          "name": "main.css",
+          "path": "/css/main.css",
+          "type": "file"
+        },
+        {
+          "name": "more-css",
+          "path": "/css/more-css",
+          "type": "directory"
+        }
+      ]
+    },
+    "/css/main.css": {
+      "name": "main.css",
+      "path": "/css/main.css",
+      "type": "file",
+      "children": []
+    },
+    "/css/more-css": {
+      "name": "more-css",
+      "path": "/css/more-css",
+      "type": "directory",
+      "children": [
+        {
+          "name": "extra.css",
+          "path": "/css/more-css/extra.css",
+          "type": "file"
+        }
+      ]
+    },
+    "/css/more-css/extra.css": {
+      "name": "extra.css",
+      "path": "/css/more-css/extra.css",
+      "type": "file",
+      "children": []
+    },
+    "/images": {
+      "name": "images",
+      "path": "/images",
+      "type": "directory",
+      "children": [
+        {
+          "name": "bitcoin.jpg",
+          "path": "/images/bitcoin.jpg",
+          "type": "file"
+        },
+        {
+          "name": "logo.png",
+          "path": "/images/logo.png",
+          "type": "file"
+        }
+      ]
+    },
+    "/images/bitcoin.jpg": {
+      "name": "bitcoin.jpg",
+      "path": "/images/bitcoin.jpg",
+      "type": "file",
+      "children": []
+    },
+    "/images/logo.png": {
+      "name": "logo.png",
+      "path": "/images/logo.png",
+      "type": "file",
+      "children": []
+    },
+    "/index.html": {
+      "name": "index.html",
+      "path": "/index.html",
+      "type": "file",
+      "children": []
+    },
+    "/js": {
+      "name": "js",
+      "path": "/js",
+      "type": "directory",
+      "children": [
+        {
+          "name": "data.js",
+          "path": "/js/data.js",
+          "type": "file"
+        },
+        {
+          "name": "main.js",
+          "path": "/js/main.js",
+          "type": "file"
+        },
+        {
+          "name": "more.js",
+          "path": "/js/more.js",
+          "type": "file"
+        }
+      ]
+    },
+    "/js/data.js": {
+      "name": "data.js",
+      "path": "/js/data.js",
+      "type": "file",
+      "children": []
+    },
+    "/js/main.js": {
+      "name": "main.js",
+      "path": "/js/main.js",
+      "type": "file",
+      "children": []
+    },
+    "/js/more.js": {
+      "name": "more.js",
+      "path": "/js/more.js",
+      "type": "file",
+      "children": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "serve-static-directory",
+  "version": "1.0.0",
+  "description": "Create routes for and serve all content in static directory",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --ignore public/ server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "mime-types": "^2.1.34"
+  }
+}

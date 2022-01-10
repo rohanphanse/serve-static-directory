@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    margin: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+#logo-image {
+    height: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#log-label {
+    margin-top: 20px;
+}
+
+#log {
+    padding-left: 20px;
+}
+
+.file-tree {
+    padding-left: 20px;
+}
+
+.file-tree-item-container {
+    
+}
+
+.file-tree-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.file-tree-item-directory-icon {
+    margin-right: 5px;
+    color: rgb(148, 203, 255);
+    cursor: pointer;
+}
+
+.file-tree-item-file-icon {
+    margin-right: 5px;
+    color: rgb(153, 153, 153);
+    padding: 0;
+    cursor: pointer;
+}
+
+.file-tree-item-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.file-tree-item-name {
+    cursor: pointer;
+}
+
+.file-tree-item-name:hover {
+    color: blue;
+}
+
+.file-tree-item-children {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
