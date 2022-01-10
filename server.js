@@ -66,7 +66,7 @@ async function handleGETRequest(req, res, static_data) {
             default:
                 const result = await serveStaticAsset(staticAssetsData, req, res)
                 if (result.error) {
-                    res.writeHead(200, {
+                    res.writeHead(404, {
                         "Content-Type": "text/html"
                     })
                     return res.end("<h1>Error 404: Not Found :(</h1>")

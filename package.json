@@ -1,7 +1,7 @@
 {
   "name": "serve-static-directory",
   "version": "1.0.0",
-  "description": "Create routes for and serve all content in static directory",
+  "description": "Generate routes and serve all content in static directory",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
