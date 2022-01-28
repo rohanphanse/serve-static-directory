@@ -13,8 +13,20 @@
     <div class = "container">
         <h1 class = "title">Serve Static Directory</h1>
         <img src = "/images/logo.png" id = "logo-image" />
-        <div>Static Assets:</div>
-        <div id = "static-assets-tree" class = "file-tree"></div>
+        <div class = "file-tree-sections">
+            <div class = "file-tree-section">
+                <div class = "file-tree-title">Root Tree <code>/root</code></div>
+                <div id = "root-tree" class = "file-tree"></div>
+            </div>
+            <div class = "file-tree-section">
+                <div class = "file-tree-title">Public Tree <code>/</code></div>
+                <div id = "public-tree" class = "file-tree"></div>
+            </div>
+            <div class = "file-tree-section">
+                <div class = "file-tree-title">Express Tree <code>/express</code></div>
+                <div id = "express-tree" class = "file-tree"></div>
+            </div>
+        </div>
         <!--<div id = "log-label">Log:</div>-->
         <ul id = "log"></ul>
     </div>

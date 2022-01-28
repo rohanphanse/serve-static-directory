@@ -37,10 +37,6 @@ body {
 }
 
 .file-tree {
-    padding-left: 20px;
-}
-
-.file-tree-item-container {
     
 }
 
@@ -82,3 +78,32 @@ body {
     flex-direction: column;
 }
 
+.file-tree-sections {
+    display: flex;
+}
+
+.file-tree-section {
+    margin: 20px;
+}
+
+.file-tree-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 1p
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+code {
+    font-family: monospace;
+    padding: 1px 2px;
+    border-radius: 2px;
+    background-color: rgb(226, 226, 226);
+}
+
+.file-tree-title code {
+    margin-left: 5px;
+    font-size: 0.9em;
+    font-weight: 400;
+}

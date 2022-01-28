@@ -36,9 +36,11 @@ function createHTTPServer(static_data) {
                     return res.end(JSON.stringify({ error: true, message: `Request method "${req.method}" not supported` }))
             }
         } catch (error) {
-            res.statusCode = 500
-            res.setHeader("Content-Type", "application/json")
-            res.end(JSON.stringify({ error: true, message: error.message }))
+            console.error(error)
+            res.writeHead(500, {
+                "Content-Type": "application/json"
+            })
+            res.end(JSON.stringify({ error: true, message: "Server error" }))
         }
     })
 }
@@ -48,30 +50,19 @@ async function handleGETRequest(req, res, static_data) {
     try {
         switch (req.url) {
             case "/":
-                fs.readFile("./public/index.html", "utf8", (error, data) => {
-                    if (error) {
-                        throw new Error("Server error with index.html")
-                    }
-                    res.writeHead(200, {
-                        "Content-Type": "text/html"
-                    })
-                    return res.end(data)
+                const data = await fsPromises.readFile("./public/index.html", "utf8")
+                res.writeHead(200, {
+                    "Content-Type": "text/html"
                 })
-                break
+                return res.end(data)
             case "/static-assets-data":
                 res.writeHead(200, {
                     "Content-Type": "application/json"
                 })
                 return res.end(JSON.stringify(staticAssetsData, null, "  "))
             default:
-                const result = await serveStaticAsset(staticAssetsData, req, res)
-                if (result.error) {
-                    res.writeHead(404, {
-                        "Content-Type": "text/html"
-                    })
-                    return res.end("<h1>Error 404: Not Found :(</h1>")
-                }
-                break
+                return await serveStaticAsset(staticAssetsData, req, res)
+                
         }
     } catch (error) {
         res.writeHead(500, {

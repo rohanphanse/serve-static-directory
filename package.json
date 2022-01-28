@@ -15,6 +15,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "express": "^4.17.2",
     "mime-types": "^2.1.34"
   }
 }

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const staticAssetsTree = document.getElementById("static-assets-tree")
+    const rootTree = document.getElementById("root-tree")
+    const publicTree = document.getElementById("public-tree")
+    const expressTree = document.getElementById("express-tree")
     const log = document.getElementById("log")
     
     ;(async () => {
@@ -9,10 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.setItem("static-assets-data", JSON.stringify(data))
         }
         const staticAssetsData = JSON.parse(sessionStorage.getItem("static-assets-data"))
-        createStaticAssetsTree(staticAssetsData)
+        createStaticAssetsTree(rootTree, staticAssetsData.root)
+        createStaticAssetsTree(publicTree, staticAssetsData.public)
+        createStaticAssetsTree(expressTree, staticAssetsData.express)
     })()
 
-    function createStaticAssetsTree(staticAssetsData) {
+    function createStaticAssetsTree(rootTreeElement, static_directory) {
         // logToHTML("TREEE")
         function createTree(directoryElement, directory_node) {
             let sortedChildren = directory_node.children.sort((n1, n2) => {
@@ -80,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     const link = document.createElement("a")
                     link.className = "file-tree-item-link"
-                    link.href = child.path
+                    link.href = static_directory.prefix === "/" ? child.path : static_directory.prefix + child.path
                     link.innerText = child.name
                     item.append(link)
                     container.append(item)
@@ -88,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 directoryElement.append(container)
             }
         }
-        createTree(staticAssetsTree, staticAssetsData.tree.root)
+        createTree(rootTreeElement, static_directory.tree.root)
     }
 
     function logToHTML(message) {
