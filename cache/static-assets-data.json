@@ -101,6 +101,12 @@
                 ]
               },
               {
+                "name": ".package-lock.json",
+                "path": "/node_modules/.package-lock.json",
+                "type": "file",
+                "children": []
+              },
+              {
                 "name": "@sindresorhus",
                 "path": "/node_modules/@sindresorhus",
                 "type": "directory",
@@ -3022,6 +3028,49 @@
                   {
                     "name": "package.json",
                     "path": "/node_modules/fresh/package.json",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "fsevents",
+                "path": "/node_modules/fsevents",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "LICENSE",
+                    "path": "/node_modules/fsevents/LICENSE",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "README.md",
+                    "path": "/node_modules/fsevents/README.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "fsevents.d.ts",
+                    "path": "/node_modules/fsevents/fsevents.d.ts",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "fsevents.js",
+                    "path": "/node_modules/fsevents/fsevents.js",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "fsevents.node",
+                    "path": "/node_modules/fsevents/fsevents.node",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "package.json",
+                    "path": "/node_modules/fsevents/package.json",
                     "type": "file",
                     "children": []
                   }
@@ -9133,6 +9182,11 @@
             "type": "directory"
           },
           {
+            "name": ".package-lock.json",
+            "path": "/node_modules/.package-lock.json",
+            "type": "file"
+          },
+          {
             "name": "@sindresorhus",
             "path": "/node_modules/@sindresorhus",
             "type": "directory"
@@ -9390,6 +9444,11 @@
           {
             "name": "fresh",
             "path": "/node_modules/fresh",
+            "type": "directory"
+          },
+          {
+            "name": "fsevents",
+            "path": "/node_modules/fsevents",
             "type": "directory"
           },
           {
@@ -9985,6 +10044,12 @@
       "/root/node_modules/.bin/semver": {
         "name": "semver",
         "path": "/node_modules/.bin/semver",
+        "type": "file",
+        "children": []
+      },
+      "/root/node_modules/.package-lock.json": {
+        "name": ".package-lock.json",
+        "path": "/node_modules/.package-lock.json",
         "type": "file",
         "children": []
       },
@@ -15012,6 +15077,79 @@
       "/root/node_modules/fresh/package.json": {
         "name": "package.json",
         "path": "/node_modules/fresh/package.json",
+        "type": "file",
+        "children": []
+      },
+      "/root/node_modules/fsevents": {
+        "name": "fsevents",
+        "path": "/node_modules/fsevents",
+        "type": "directory",
+        "children": [
+          {
+            "name": "LICENSE",
+            "path": "/node_modules/fsevents/LICENSE",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "path": "/node_modules/fsevents/README.md",
+            "type": "file"
+          },
+          {
+            "name": "fsevents.d.ts",
+            "path": "/node_modules/fsevents/fsevents.d.ts",
+            "type": "file"
+          },
+          {
+            "name": "fsevents.js",
+            "path": "/node_modules/fsevents/fsevents.js",
+            "type": "file"
+          },
+          {
+            "name": "fsevents.node",
+            "path": "/node_modules/fsevents/fsevents.node",
+            "type": "file"
+          },
+          {
+            "name": "package.json",
+            "path": "/node_modules/fsevents/package.json",
+            "type": "file"
+          }
+        ]
+      },
+      "/root/node_modules/fsevents/LICENSE": {
+        "name": "LICENSE",
+        "path": "/node_modules/fsevents/LICENSE",
+        "type": "file",
+        "children": []
+      },
+      "/root/node_modules/fsevents/README.md": {
+        "name": "README.md",
+        "path": "/node_modules/fsevents/README.md",
+        "type": "file",
+        "children": []
+      },
+      "/root/node_modules/fsevents/fsevents.d.ts": {
+        "name": "fsevents.d.ts",
+        "path": "/node_modules/fsevents/fsevents.d.ts",
+        "type": "file",
+        "children": []
+      },
+      "/root/node_modules/fsevents/fsevents.js": {
+        "name": "fsevents.js",
+        "path": "/node_modules/fsevents/fsevents.js",
+        "type": "file",
+        "children": []
+      },
+      "/root/node_modules/fsevents/fsevents.node": {
+        "name": "fsevents.node",
+        "path": "/node_modules/fsevents/fsevents.node",
+        "type": "file",
+        "children": []
+      },
+      "/root/node_modules/fsevents/package.json": {
+        "name": "package.json",
+        "path": "/node_modules/fsevents/package.json",
         "type": "file",
         "children": []
       },

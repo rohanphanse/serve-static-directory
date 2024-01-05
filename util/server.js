@@ -17,12 +17,12 @@ async function serveStaticAsset(data, req, res) {
                     res.writeHead(200, {
                         "Content-Type": content_type
                     })
-                    res.end(file_data)
+                    return res.end(file_data)
                 } else if (node.type === "directory") {
                     res.writeHead(200, {
                         "Content-Type": "text/html"
                     })
-                    res.end(JSON.stringify(node.children))
+                    return res.end(JSON.stringify(node.children))
                 } else {
                     throw new Error("Server error :(")
                 }

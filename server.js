@@ -27,8 +27,6 @@ function createHTTPServer(static_data) {
             switch (req.method) {
                 case "GET":
                     return handleGETRequest(req, res, static_data)
-                case "POST":
-                    return handlePOSTRequest(req, res)
                 default:
                     res.writeHead(400, {
                         "Content-Type": "application/json"
